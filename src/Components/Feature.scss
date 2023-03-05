@@ -1,0 +1,63 @@
+.feature{
+    height: 90vh;
+    position: relative;
+
+    .category{
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        color: white;
+        font-weight: 400;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+
+        select{
+            cursor: pointer;
+            background-color: black;
+            border: 0.5px solid white;
+            color: white;
+            margin-left: 20px;
+            padding: 5px 10px;
+        }
+
+    }
+    img{
+        height: 120%;
+        object-fit: cover;
+    }
+
+    .info{
+        width: 30%;
+        left: 50px;
+        bottom: 80px;
+        position: absolute;
+        font-weight: 600;
+        
+        .desc{
+            background:linear-gradient(transparent, white 110%);
+        }
+
+        .buttons{
+            display: flex;
+
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1rem;
+                margin-right: 1rem;
+                font-size: 15px;
+                cursor: pointer;
+
+                &.more{
+                    background-color: grey;
+                    color: white;
+                }
+            }
+        }
+    }
+}

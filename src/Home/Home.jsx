@@ -1,12 +1,12 @@
 import React from 'react'
+import Feature from '../Components/Feature'
 import Navbar from '../Components/Navbar'
-import cover from '../Images/strangerthings.jpg'
 
 const Home = () => {
   return (
     <div>
         <Navbar/>
-        <img src={cover} alt="" width="100%"/>
+        <Feature/>
     </div>
   )
 }
