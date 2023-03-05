@@ -2,8 +2,10 @@ import { ArrowBackIosNewOutlined, ArrowForwardIosOutlined } from '@mui/icons-mat
 import React, { useRef, useState } from 'react'
 import './List.scss'
 import ListItem from './ListItem'
+// import supernaturals from "../Images/supernaturals.jpg";
+// import you from "../Images/you.jpg"
 
-const List = () => {
+const List = ({img, img1}) => {
 
     const [slideNumber, setSlideNumber] = useState(0)
 
@@ -29,8 +31,8 @@ const List = () => {
         <div className="wrapper">
             <ArrowBackIosNewOutlined className='slideArrow left' onClick={()=>handleclick("left")}/>
             <div className="container" ref={listRef}>
-                <ListItem index={0}/>
-                <ListItem index={1}/>
+                <ListItem index={0} imgSlide={img}/>
+                <ListItem index={1} imgSlide={img1}/>
                 <ListItem index={2}/>
                 <ListItem index={3}/>
                 <ListItem index={4}/>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ListItem.scss";
-import supernaturals from "../Images/supernaturals.jpg";
 import {
   Add,
   PlayArrow,
@@ -8,7 +7,7 @@ import {
   ThumbUpOutlined,
 } from "@mui/icons-material";
 
-const ListItem = ({index}) => {
+const ListItem = ({index, imgSlide}) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
@@ -17,7 +16,7 @@ const ListItem = ({index}) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={supernaturals} alt="" />
+      <img src={imgSlide} alt="" />
       <div className="itemInfo">
         <div className="icons">
           <PlayArrow className="icon"/>
