@@ -1,5 +1,6 @@
 import React from 'react'
 import Feature from '../Components/Feature'
+import List from '../Components/List'
 import Navbar from '../Components/Navbar'
 
 const Home = () => {
@@ -7,6 +8,11 @@ const Home = () => {
     <div>
         <Navbar/>
         <Feature/>
+        <List/>
+        <List/>
+        <List/>
+        <List/>
+        <List/>
     </div>
   )
 }
