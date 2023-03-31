@@ -7,7 +7,7 @@ import {
   ThumbUpOutlined,
 } from "@mui/icons-material";
 
-const ListItem = ({index, imgSlide}) => {
+const ListItem = ({index, value}) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
@@ -16,7 +16,7 @@ const ListItem = ({index, imgSlide}) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={imgSlide} alt="" />
+      <img src={value} alt="" />
       <div className="itemInfo">
         <div className="icons">
           <PlayArrow className="icon"/>

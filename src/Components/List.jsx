@@ -2,13 +2,9 @@ import { ArrowBackIosNewOutlined, ArrowForwardIosOutlined } from '@mui/icons-mat
 import React, { useRef, useState } from 'react'
 import './List.scss'
 import ListItem from './ListItem'
-// import supernaturals from "../Images/supernaturals.jpg";
-// import you from "../Images/you.jpg"
 
-const List = ({img, img1}) => {
-
+const List = ({image}) => {
     const [slideNumber, setSlideNumber] = useState(0)
-
     //same as query selector is jS
     const listRef = useRef()
 
@@ -31,8 +27,14 @@ const List = ({img, img1}) => {
         <div className="wrapper">
             <ArrowBackIosNewOutlined className='slideArrow left' onClick={()=>handleclick("left")}/>
             <div className="container" ref={listRef}>
-                <ListItem index={0} imgSlide={img}/>
-                <ListItem index={1} imgSlide={img1}/>
+            {image.map(c=>(
+                    <ListItem 
+                    key = {c.id} 
+                    value = {c.value} 
+                    index = {c.index}/>
+                ))}
+                {/* <ListItem index={0} imgSlide={image}/>
+                <ListItem index={1} imgSlide={image}/>
                 <ListItem index={2}/>
                 <ListItem index={3}/>
                 <ListItem index={4}/>
@@ -40,7 +42,7 @@ const List = ({img, img1}) => {
                 <ListItem index={6}/>
                 <ListItem index={7}/>
                 <ListItem index={8}/>
-                <ListItem index={9}/>
+                <ListItem index={9}/> */}
             </div>
             <ArrowForwardIosOutlined className='slideArrow right' onClick={()=>handleclick("right")}/>
         </div>
