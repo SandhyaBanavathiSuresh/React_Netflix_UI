@@ -1,9 +1,9 @@
-## Step 1
+### Step 1 'npm i'
 
 Run 'npm i'
 This will install all the required node modules for the project
 
-### `npm start`
+### Step 2 `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
