@@ -1,6 +1,6 @@
-### Step 1 'npm i'
+### Step 1 `npm i`
 
-Run 'npm i'
+Run "npm i" in command prompt
 This will install all the required node modules for the project
 
 ### Step 2 `npm start`
